@@ -1,6 +1,6 @@
 # TUS_device_sim_and_char
 Code for the Master's Thesis "Characterization and Simulation of a 256-elements Transcranial Ultrasound Stimulation Device"
-
+DON'T FORGET TO REMOVE SENSITIVE DATA
 ## Introduction / Background and Motivation
 
 In this repository, you will find the code (only MATLAB ??) that was written and used to obtain the results in Maylis Müller's Master's Thesis. 
