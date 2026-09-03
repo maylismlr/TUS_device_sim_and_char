@@ -22,32 +22,49 @@ In this repository, you will find the code (only MATLAB ??) that was written and
 The project's architecture is described below:
 
 ```text
-project/
-├── folder_01/
-│   ├── subfolder_01/      # Description
-│   ├── subfolder_02/
-│   └── subfolder_03/
-├── folder_02/             # Description
-│   ├── subfolder_01/
-│   ├── subfolder_02/
-│   └── subfolder_03/
-├── folder_03/
-│   ├── subfolder_01/
-│   ├── subfolder_02/
-│   └── subfolder_03/
-├── folder_04/             # Description
-│   ├── subfolder_01/
-│   ├── subfolder_02/
-│   └── subfolder_03/
-├── folder_05/             # Description
-│   ├── subfolder_01/
-│   ├── subfolder_02/
-│   └── subfolder_03/
-├── folder_06/             # Description
-├── folder_07/             # Description
-├── folder_08/             # Description
-├── folder_09/             # Description
-└── utils/             # Description (kind of straigth forward)
+ -tu_muellerm_cloud/
+  ├── skulls_FUN/
+  │   ├── sensor_data/      # Description
+  │         ├── el_size_calib/ 
+                      ├── pac/ # PAC DATA, pac_ at beginning means file with actual delays; if _PAC at the end means sensor data after                            │         # applying PAC
+                      ├── unsteered/ # 
+  │                   └── steered/
+  │                  
+  ├── folder_02/             # Description
+  │   ├── subfolder_01/
+  │   ├── subfolder_02/
+  │   └── subfolder_03/
+  ├── folder_03/
+  │   ├── subfolder_01/
+  │   ├── subfolder_02/
+  │   └── subfolder_03/
+  
+ -tu_muellerm/
+  ├── folder_01/
+  │   ├── subfolder_01/      # Description
+  │   ├── subfolder_02/
+  │   └── subfolder_03/
+  ├── folder_02/             # Description
+  │   ├── subfolder_01/
+  │   ├── subfolder_02/
+  │   └── subfolder_03/
+  ├── folder_03/
+  │   ├── subfolder_01/
+  │   ├── subfolder_02/
+  │   └── subfolder_03/
+  ├── folder_04/             # Description
+  │   ├── subfolder_01/
+  │   ├── subfolder_02/
+  │   └── subfolder_03/
+  ├── folder_05/             # Description
+  │   ├── subfolder_01/
+  │   ├── subfolder_02/
+  │   └── subfolder_03/
+  ├── folder_06/             # Description
+  ├── folder_07/             # Description
+  ├── folder_08/             # Description
+  ├── folder_09/             # Description
+  └── utils/             # Description (kind of straigth forward)
 ```
 
 ### Folder contents
