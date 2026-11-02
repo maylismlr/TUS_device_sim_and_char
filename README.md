@@ -16,7 +16,7 @@ This establishes a calibrated, device-specific simulation framework for TRUST, a
 ## Requirements
 
 - MATLAB (we used R2025a)
-- k-Wave (v1.4, cite)
+- k-Wave (v1.4)
 - k-Wave CUDA binaries for GPU-accelerated three-dimensional simulations cite
 
 ## Description
