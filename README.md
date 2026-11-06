@@ -51,18 +51,13 @@ The project's architecture is described below:
   ├── little_TUS_anim_for_fun/           
   │
   ├── PAC/                         # Phase aberration correction
-  │   └── PAC_plots/
   │
   ├── skull_models/             
-  │   ├── python_files/            # To map acoustic properties to HU values for the skulls, and to plot simulation pressure fields
   │   └── skull_model_results/
   │
   ├── skull_simulation_videos/     # Contains short 2D videos showing ultrasound wave attenuation through muCT skull        
   │
-  ├── to_reproduce_paper_figures/  # To reproduce Figures 6 and 7 from Tretbar et al.
-  │   └── simulation_plots/
-  │       ├── Figure_6/
-  │       └── Figure_7/
+  ├── to_rep_Figures_paper/  # To reproduce Figures 6 and 7 from Tretbar et al.
   │
   └── utils/                       # Helper functions
 ```
@@ -103,9 +98,6 @@ Contains the simulations and analysis used to determine the effective radiating 
 
 Contains the code used to evaluate the pressure-amplitude calibration implemented in \texttt{trust\_p0.m}. The analysis verifies the relationship between the requested device voltage, focal depth, and source pressure used in the simulations based on the available TÜV SÜD hydrophone measurements.
 
-The folder also contains element-size-calibrated free-field simulation pressure fields obtained at several focal depths.
-
-
 #### `little_TUS_anim_for_fun` 
 
 Contains a simplified two-dimensional k-Wave simulation used to generate an illustrative animation of pulsed transcranial ultrasound stimulation. The corresponding animation is also included in the folder.
@@ -116,8 +108,6 @@ This material is provided for visualisation purposes and is not used in the quan
 
 Contains the implementation and analysis of phase-aberration correction (PAC). The code estimates element-wise phase corrections from skull-dependent acoustic propagation and uses the resulting delays to perform corrected TRUST simulations.
 
-The folder also contains scripts for extracting PAC-related metrics, comparing corrected and uncorrected simulations, and generating the corresponding figures. Generated figures are stored in \texttt{PAC\_plots/}.
-
 **Main files**
 
 * `tFUS_3D_[skull_model_name]_PAC.m` — Runs the simulations with PAC and plots figures.
@@ -127,10 +117,6 @@ The folder also contains scripts for extracting PAC-related metrics, comparing c
 
 Contains the code used to generate the acoustic skull models and perform transcranial ultrasound simulations through these models.
 
-**Main subfolder**
-
-* `python_files/`- Contains the Python scripts used to map image-derived skull values to acoustic properties and to visualise the resulting acoustic-property maps and simulation pressure fields.
-
 **Main files**
 
 * `tFUS_3D_[skull_model_name]`- Runs a three-dimensional TRUST simulation using the corresponding skull model as the heterogeneous acoustic medium.
@@ -139,13 +125,9 @@ Contains the code used to generate the acoustic skull models and perform transcr
 
 Contains short two-dimensional animations illustrating ultrasound propagation and attenuation through the $\mu$CT-derived skull model.
 
-#### `to_reproduce_paper_figures`
+#### `to_rep_Figures_paper`
 
 Contains simulations and plotting scripts used to reproduce selected results from Tretbar et al., in particular Figures~6 and~7 describing the acoustic field of the TRUST device.
-
-The generated simulation figures are stored in:
-* ```simulation_plots/Figure_6/```
-* ```simulation_plots/Figure_7/```
 
 #### `utils`
 
