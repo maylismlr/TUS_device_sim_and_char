@@ -1,8 +1,8 @@
 %% Code to extract metrics before and after PAC
 % extract_PAC_metrics.m
 %
-% From the data obtained after running tFUS_3D_PAC.m, obtain the tables
-% found in the thesis.
+% From the data obtained after running tFUS_3D_PAC.m, obtain Tables 3.5 and
+% 3.6 found in the thesis.
 %
 % Compare:
 %   PAC      vs free-field reference
