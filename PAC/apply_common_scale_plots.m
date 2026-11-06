@@ -2,7 +2,8 @@
 % apply_common_scale_plots.m
 %
 % Script to load the PAC plots (or any plots) and add the same scale to
-% them (up to global max p across all figures)
+% them (up to global max p across all figures). Used to obtain some of the
+% plots in Figures 3.12 and 3.13.
 %
 % author: Maylis Mueller
 
