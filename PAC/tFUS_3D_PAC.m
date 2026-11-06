@@ -2,7 +2,8 @@
 % Based on tFUS_3D_MR.m.
 % Runs the whole PAC pipeline. To check if it worked, replaced medium_water
 % by medium_skull in the estimate_pac_phase_reversal call. Gave out same
-% simulations as without PAC and flat progress plots.
+% simulations as without PAC and flat progress plots. Outputs somes of the
+% plots in Figures 3.12 and 3.13.
 %
 % Author: Maylis Mueller
 
